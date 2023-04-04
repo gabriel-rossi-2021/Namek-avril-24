@@ -30,7 +30,7 @@ return new class extends Migration
 
             // CLE ETRANGERE
             $table->unsignedBigInteger('function_id');
-            $table->foreign('function_id')->references('id_function')->on('Function')->onDelete('cascade');
+            $table->foreign('function_id')->references('id_function')->on('function')->onDelete('cascade');
 
             $table->unsignedBigInteger('address_id');
             $table->foreign('address_id')->references('id_address')->on('address')->onDelete('cascade');
