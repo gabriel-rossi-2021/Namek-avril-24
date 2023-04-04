@@ -9,8 +9,8 @@ return new class extends Migration
     public function up()
     {
         // CREATION DE LA TABLE Function
-        Schema::create('Function', function (Blueprint $table) {
-            $table->unsignedBigInteger('id_function')->nullable(false);
+        Schema::create('function', function (Blueprint $table) {
+            $table->id('id_function')->nullable(false);
             $table->string('name_function', 50 )->nullable(false);
         });
     }
