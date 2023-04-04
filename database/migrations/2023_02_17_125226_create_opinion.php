@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         // CREATION DE LA TABLE Opinion
-        Schema::create('Opinion', function (Blueprint $table) {
+        Schema::create('opinion', function (Blueprint $table) {
             $table->id('id_opinion')->nullable(false);
             $table->smallInteger('notation')->nullable(false);
             $table->string('comment', 255 )->nullable(false);
