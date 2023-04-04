@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         // CREATION DE LA TABLE Address
-        Schema::create('Address', function (Blueprint $table) {
+        Schema::create('address', function (Blueprint $table) {
             $table->id('id_address')->nullable(false);
             $table->string('city', 50 )->nullable(false);
             $table->bigInteger('NPA' )->nullable(false);
