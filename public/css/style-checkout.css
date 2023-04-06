@@ -3,6 +3,11 @@
     color: #499b4a;
 }
 
+.accordion-button:not(.collapsed){
+    background: linear-gradient(90deg, rgba(73,155,74,0.6320903361344538) 0%, rgba(73,155,74,0.5144432773109244) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
 #prix-ttc{
     text-align: end;
     color:black;
