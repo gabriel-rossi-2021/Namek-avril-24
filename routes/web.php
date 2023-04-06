@@ -53,6 +53,6 @@ Route::get('/search', "App\\Http\\Controllers\\shop\\MainController@search")->na
 Route::get('admin', "App\\Http\\Controllers\\shop\\AdminController@AfficheAdmin")->name('admin');
 
 /* REDIRECTION SUR LA VUE Facture*/
-Route::get('/confirmation-paiement', "App\\Http\\Controllers\\shop\\CommandeController@AfficheFacture");
+Route::get('/confirmation-paiement', "App\\Http\\Controllers\\shop\\CommandeController@AfficheFacture")->name('generation_facture');
 
 
